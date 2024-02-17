@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validaciones JS </title>
+  <link rel="stylesheet" href="styles.css">
+  <div>
+    <ul>
+      <h2>Los campos se validaran de la siguiente manera</h2>
+
+      <li><a><b>Ficha:</b> puede ingresar cualquier caracter</a></li>
+
+      <li><a><b>Nombre:</b>solo se puede ingresar letras</a></li>
+
+      <li><a><b>Apellidos:</b>solo se puede ingresar letras</a></li>
+
+      <li><a><b>Correo:</b>se puede ingresar cualquier caracter</a></li>
+
+      <li><a><b>Telefono:</b>se puede ingresar numeros</a></li>
+
+      <li><a><b>Genero:</b>se puede seleccionar un genero</a></li>
+
+      <li><a><b>Ciudad:</b>se puede seleccionar una cuidad</a></li>
+
+      <li><a><b>Habilidades:</b>se tiene que seleccionar minimo 3 habilidades</a></li>
+  </div>
+  </ul>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Validaciones JS</h2>
+    <form>
+      <div>
+        <label for="Numero de ficha">Numero de ficha:</label>
+        <input type="text" id="Numero de ficha" name="Numero de ficha" required autocomplete="off">
+      </div>
+
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" pattern="[A-Za-z]+" required autocomplete="off">
+      </div>
+
+      <div>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" pattern="[A-Za-z]+" required>
+      </div>
+
+      <div>
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" maxlength="10" required>
+      </div>
+
+      <div>
+        <label>
+          Hombre <input type="radio" name="genero" value="Hombre" required>
+          <label>
+
+            <label>
+              Mujer <input type="radio" name="genero" value="Mujer">
+              <label>
+
+                <label>
+                  Otro <input type="radio" name="genero" value="Otro">
+                  <label>
+      </div>
+
+      <div>
+        <label for="Ciudad">ciudad</label>
+        <select nombre="ciudad" id="ciudad" required>
+          <option value="">Seleccione</option>
+          <option value="1">Bucaramanga</option>
+          <option value="2">Bogota</option>
+          <option value="3">Barranquilla</option>
+          <option value="4">Cali</option>
+        </select>
+      </div>
+
+      <div>
+        <p>Seleccione minimo 3 habilidades</p>
+        <div>
+          <input type="checkbox" id="html" value="html">
+          <label for="html">HTML</label>
+        </div>
+        <div>
+          <input type="checkbox" id="css" value="css">
+          <label for="html">CSS</label>
+        </div>
+        <div>
+          <input type="checkbox" id="html" value="html">
+          <label for="JAVASCRIPT">JAVASCRIPT</label>
+        </div>
+        <div>
+          <input type="checkbox" id="html" value="html">
+          <label for="PHP">PHP</label>
+        </div>
+        <div>
+          <input type="checkbox" id="html" value="html">
+          <label for="JAVA">JAVA</label>
+        </div>
+        <div>
+          <input type="checkbox" id="html" value="html">
+          <label for="SQL">SQL</label>
+        </div>
+        <div>
+          <input type="checkbox" id="html" value="html">
+          <label for="SQL">PHP</label>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="html" value="html">
+        <label for="UML">UML</label>
+      </div>
+
+      <div>
+        <button type="submit">Enviar</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+
+
+</html>

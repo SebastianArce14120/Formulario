@@ -8,31 +8,42 @@
   <link rel="stylesheet" href="styles.css">
   <div>
     <ul>
-      <h2>Los campos se validaran de la siguiente manera</h2>
+      <article class="card">
+        <h2>Los campos se validaran de la siguiente manera</h2>
 
-      <li><a><b>Ficha:</b> puede ingresar cualquier caracter</a></li>
+        <li class="item"><a><b>Ficha:</b> puede ingresar cualquier caracter</a></li>
 
-      <li><a><b>Nombre:</b>solo se puede ingresar letras</a></li>
+        <li><a><b>Nombre:</b>solo se puede ingresar letras</a></li>
 
-      <li><a><b>Apellidos:</b>solo se puede ingresar letras</a></li>
+        <li><a><b>Apellidos:</b>solo se puede ingresar letras</a></li>
 
-      <li><a><b>Correo:</b>se puede ingresar cualquier caracter</a></li>
+        <li><a><b>Correo:</b>se puede ingresar cualquier caracter</a></li>
 
-      <li><a><b>Telefono:</b>se puede ingresar numeros</a></li>
+        <li><a><b>Telefono:</b>se puede ingresar numeros</a></li>
 
-      <li><a><b>Genero:</b>se puede seleccionar un genero</a></li>
+        <li><a><b>Genero:</b>se puede seleccionar un genero</a></li>
 
-      <li><a><b>Ciudad:</b>se puede seleccionar una cuidad</a></li>
+        <li><a><b>Ciudad:</b>se puede seleccionar una cuidad</a></li>
 
-      <li><a><b>Habilidades:</b>se tiene que seleccionar minimo 3 habilidades</a></li>
+        <li><a><b>Habilidades:</b>se tiene que seleccionar minimo 3 habilidades</a></li>
+      </article>
+    </ul>
   </div>
-  </ul>
 </head>
 
+<header class="header">
+  <h1 class="header__title">
+    validaciones JS
+  </h1>
+</header>
+
 <body>
-  <div class="container">
-    <h2>Validaciones JS</h2>
+  <div class="contenedor">
+    <div class="hijo"></div>
     <form>
+      <h2 class="form">
+        Formulario
+      </h2>
       <div>
         <label for="Numero de ficha">Numero de ficha:</label>
         <input type="text" id="Numero de ficha" name="Numero de ficha" required autocomplete="off">
@@ -113,18 +124,17 @@
           <input type="checkbox" id="html" value="html">
           <label for="SQL">PHP</label>
         </div>
-      </div>
-      <div>
-        <input type="checkbox" id="html" value="html">
-        <label for="UML">UML</label>
-      </div>
+        <div>
+          <input type="checkbox" id="html" value="html">
+          <label for="UML">UML</label>
+        </div>
 
-      <div>
-        <button type="submit">Enviar</button>
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
       </div>
-
-    </form>
   </div>
+  </form>
 </body>
 
 

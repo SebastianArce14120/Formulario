@@ -1,13 +1,14 @@
 const ficha = document.getElementById("ficha");
 
-ficha.addEventListener('blur', () => {
-  // alert(ficha.value)
-  if (ficha.value == "") {
-    alert("llene al campo ficha")
+
+const validar = function () {
+  let exp = "^[a-zA-Z]{5}$";
+  let campo = ficha.value
+
+  if (campo.match(exp) != null) {
   } else {
-    if (ficha.value == isInteger) {
-
-    }
-
+    alert("Ingrese 5 numeros")
   }
-});
+}
+
+ficha.addEventListener("blur", validar);
